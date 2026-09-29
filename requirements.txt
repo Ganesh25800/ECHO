@@ -1,0 +1,54 @@
+# ALL ECHO REQUIRED LIBRARIES, THAT WILL HELP ECHO TO PERFORM NORMALLY
+# THERE ARE FEW CATEGORIES OF REQUIREMENTS FOR DIFFERENT TASKS
+
+# -----------------------------------------------------------
+# TTS - ECHO VOICE OUTPUT
+# -----------------------------------------------------------
+kokoro-onnx # MAIN KOKORO LIBRARY FOR BOTH WINDOWS AND MAC
+sounddevice # TO SEND AUDIO OUPUT TO SPEAKER
+
+soundfile # TO STORE THE AUDIO INTO CLIPS
+# -----------------------------------------------------------
+
+
+# -----------------------------------------------------------
+# FACE - ECHO FACE DETECTION
+# -----------------------------------------------------------
+opencv-python==4.12.0.88 # TO GET CAMERA FEED
+insightface # FACE-RECOGNITION ENGINE
+onnxruntime # INSIGHTFACE CANNOT RUN IT'S ONNX MODELS WITHOUT IT
+tf-keras
+deepface[tensorflow] # TO CAPTURE EMOTION
+# -----------------------------------------------------------
+
+
+# -----------------------------------------------------------
+# STT + WAKE WORD + VAD
+# -----------------------------------------------------------
+faster-whisper
+
+pvporcupine
+silero-VAD
+# -----------------------------------------------------------
+
+
+# -----------------------------------------------------------
+# OTHER LIBRARIES
+# -----------------------------------------------------------
+psutil
+
+llama-cpp-python
+
+huggingface-hub
+
+fastapi
+
+uvicorn
+
+chromadb
+
+sentence-transformers
+
+langchain
+
+langgraph
